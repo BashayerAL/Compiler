@@ -1,0 +1,27 @@
+sahih x;
+hakiki y;
+begin
+	begin
+		@ Nested if statements @
+		if(x) then	# if 1
+			if(x) then	# if 2
+				y = 0;
+				
+		@ Nested while statements @
+		while(x) do	# while 1
+			while(x) do	# while 2
+				y = 0;
+				
+		@ If statements @
+		if(x) then	# if 3
+			y = 0;
+		if(x) then	# if 4
+			y = 0;
+			
+		@ While statements @
+		while(x) do	# while 3
+			y = 0;
+		while(x) do	# while 4
+			y = 0;
+	end
+end
